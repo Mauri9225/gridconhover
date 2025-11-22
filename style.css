@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 20px;
+}
+
+#matriz {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.celda {
+    width: 60px;
+    height: 60px;
+    background: #eee;
+    border: 1px solid #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.celda:hover {
+    background: lightyellow;
+    transform: scale(1.1);
+}
+
+#info {
+    font-size: 18px;
+}
